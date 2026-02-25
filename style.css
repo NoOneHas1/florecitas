@@ -1370,4 +1370,36 @@ body {
 .container * {
   -webkit-animation-play-state: paused !important;
           animation-play-state: paused !important;
+
 }/*# sourceMappingURL=main.css.map */
+
+/* ================= MOBILE FIX ================= */
+
+@media (max-width: 768px) {
+
+  body {
+    align-items: center;          /* centra verticalmente */
+    justify-content: center;
+  }
+
+  .flowers {
+    transform: scale(0.7);        /* ajuste principal */
+    transform-origin: center;
+    margin-top: 80px;
+  }
+
+  .message {
+    width: 90%;
+    height: auto;
+    bottom: 300px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    font-size: 18px;              /* antes 40px → gigante en iPhone */
+    line-height: 1.4;
+    padding: 12px;
+
+    border-radius: 14px;
+    text-align: center;
+  }
+}
